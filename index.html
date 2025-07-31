@@ -1,0 +1,81 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>True North Copy Trading</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f2f4f7;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .container {
+      background: white;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      max-width: 400px;
+      width: 90%;
+      text-align: center;
+    }
+    img.logo {
+      max-width: 80px;
+      margin-bottom: 1rem;
+    }
+    h1 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+      color: #1a202c;
+    }
+    p {
+      color: #4a5568;
+      margin-bottom: 1.5rem;
+    }
+    input[type="email"] {
+      width: 100%;
+      padding: 0.75rem;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      margin-bottom: 1rem;
+    }
+    button {
+      width: 100%;
+      padding: 0.75rem;
+      background-color: #0d6efd;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+    .footer {
+      margin-top: 2rem;
+      font-size: 0.8rem;
+      color: #a0aec0;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img class="logo" src="https://i.imgur.com/JnlyLGI.png" alt="True North Trading Logo" />
+    <h1>Copy My Trades</h1>
+    <p>No experience needed. Start earning today by copying every trade I make.</p>
+    <form id="leadForm">
+      <input type="email" id="email" name="email" placeholder="Enter your email" required />
+      <button type="submit">Get Started</button>
+    </form>
+    <div class="footer">@True.North.Trading | Powered by VT Markets</div>
+  </div> <script>
+    document.getElementById("leadForm").addEventListener("submit", function(e) {
+      e.preventDefault();
+      const email = document.getElementById("email").value;
+      // OPTIONAL: Save lead using third-party service or Google Forms (manual setup required)
+      window.location.href = "https://www.vtmarkets.com/trade-now/?affid=7440864";
+    });
+  </script></body>
+</html>
